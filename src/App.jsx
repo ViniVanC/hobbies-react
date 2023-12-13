@@ -1,9 +1,18 @@
-import { useState } from "react";
+import React from "react";
+import { Header } from "./components/Header/Header";
+import { Footer } from "./components/Footer/Footer";
+import { Intro } from "./sections/Intro/Intro";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return <button onClick={() => setCount(count + 1)}>{count}</button>;
+  return (
+    <>
+      <Header />
+      <main>
+        <Intro />
+      </main>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
