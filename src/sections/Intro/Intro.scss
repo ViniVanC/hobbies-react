@@ -15,7 +15,7 @@
   &__title {
     font-family: "eUkraineLOGO";
     font-size: 60px;
-    color: $light-200;
+    color: $purple;
 
     &:not(:last-child) {
       margin-bottom: 20px;
@@ -50,27 +50,27 @@
       }
 
       &:nth-child(1) {
-        color: $accent-color;
+        color: $purple;
         font-size: 150px;
         top: 500px;
         left: 280px;
       }
 
       &:nth-child(2) {
-        color: $light;
+        color: $purple;
         top: 230px;
         left: 200px;
       }
 
       &:nth-child(3) {
-        color: $light-200;
+        color: $purple-200;
         font-size: 220px;
         top: 400px;
         left: -80px;
       }
 
       &:nth-child(4) {
-        color: $accent-color;
+        color: lighten($color: $purple-200, $amount: 30);
         top: 320px;
         left: 380px;
       }
