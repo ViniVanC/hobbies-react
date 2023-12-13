@@ -24,4 +24,7 @@
 a {
   transition: all 0.2s ease-in-out;
   color: $accent-color;
+  &:hover {
+    color: darken($color: $accent-color, $amount: 30);
+  }
 }
