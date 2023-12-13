@@ -1,14 +1,13 @@
+@import "vars";
+
 :root {
-  --light: #faf3e1;
-  --dark: #222222;
-  // --accent-color: ;
   font-family: "eUkraine", sans-serif;
   line-height: 1;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: var(--light);
-  background-color: var(--dark);
+  color: $light;
+  background-color: $dark;
 }
 
 #root {
@@ -20,4 +19,9 @@
   > main {
     flex: 1 1 auto;
   }
+}
+
+a {
+  transition: all 0.2s ease-in-out;
+  color: $accent-color;
 }
