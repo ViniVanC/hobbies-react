@@ -1,0 +1,86 @@
+@import "../../vars";
+
+.intro {
+  &__inner {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .intro__text-box,
+  .intro__pictures {
+    flex: 0 1 50%;
+  }
+
+  &__title {
+    font-family: "eUkraineLOGO";
+    font-size: 60px;
+    color: $light-200;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+  }
+
+  &__description {
+    font-size: 30px;
+  }
+
+  &__pictures {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .picture {
+      font-size: 120px;
+      position: absolute;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+
+      &:hover {
+        translate: 0 -20px;
+      }
+
+      &:active {
+        scale: 0.9;
+      }
+
+      &:nth-child(1) {
+        color: $accent-color;
+        font-size: 150px;
+        top: 500px;
+        left: 280px;
+      }
+
+      &:nth-child(2) {
+        color: $light;
+        top: 230px;
+        left: 200px;
+      }
+
+      &:nth-child(3) {
+        color: $light-200;
+        font-size: 220px;
+        top: 400px;
+        left: -80px;
+      }
+
+      &:nth-child(4) {
+        color: $accent-color;
+        top: 320px;
+        left: 380px;
+      }
+
+      &:nth-child(5) {
+        color: $light;
+        font-size: 130px;
+        top: 370px;
+        left: 180px;
+      }
+    }
+  }
+}
