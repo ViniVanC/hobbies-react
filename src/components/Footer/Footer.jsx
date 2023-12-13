@@ -8,22 +8,14 @@ export const Footer = () => {
       <Container>
         <div className="footer__inner">
           <div className="copyright">
-            author & developer:{" "}
-            <a
-              href="https://t.me/rixkml_01"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            Author & Developer:{" "}
+            <a href="https://t.me/rixkml_01" target="_blank">
               rixkml_01
             </a>
             <br />
             <span className="hidden">
               True developer:{" "}
-              <a
-                href="https://github.com/ViniVanC"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href="https://github.com/ViniVanC" target="_blank">
                 Vincent Van
               </a>
             </span>

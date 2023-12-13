@@ -13,8 +13,8 @@ export const Intro = () => {
           <div className="intro__text-box">
             <div className="intro__title">
               <FaRegHand className="hi-anim" /> мене звати{" "}
-              <a href="#" target="_blank">
-                Віні
+              <a href="https://t.me/rixkml_01" target="_blank">
+                Ріта
               </a>
             </div>
             <div className="intro__description">

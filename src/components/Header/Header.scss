@@ -3,6 +3,7 @@
 .header {
   width: 100vw;
   position: fixed;
+  z-index: $z6;
   background-color: $dark;
   box-shadow: 9px 15px 45px -18px rgba(0, 0, 0, 0.3);
 
