@@ -28,3 +28,22 @@ a {
     color: darken($color: $accent-color, $amount: 30);
   }
 }
+
+.hi-anim {
+  animation: hi 1s ease-in-out 2;
+
+  @keyframes hi {
+    0% {
+      rotate: 0deg;
+      transform-origin: bottom;
+    }
+    50% {
+      rotate: 45deg;
+      transform-origin: bottom;
+    }
+    100% {
+      rotate: 0deg;
+      transform-origin: bottom;
+    }
+  }
+}
