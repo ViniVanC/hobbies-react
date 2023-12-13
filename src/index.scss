@@ -10,6 +10,24 @@
   background-color: $dark;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: $dark;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $purple;
+  border-radius: 5px;
+}
+
+::selection {
+  color: $dark;
+  background-color: $purple;
+}
+
 #root {
   display: flex;
   flex-direction: column;

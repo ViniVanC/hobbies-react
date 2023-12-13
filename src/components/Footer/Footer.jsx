@@ -8,7 +8,7 @@ export const Footer = () => {
       <Container>
         <div className="footer__inner">
           <div className="copyright">
-            Author & Developer:{" "}
+            Author:{" "}
             <a href="https://t.me/rixkml_01" target="_blank">
               rixkml_01
             </a>
