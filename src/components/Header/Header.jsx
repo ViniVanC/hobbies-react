@@ -9,7 +9,10 @@ export const Header = () => {
     <header className="header">
       <Container>
         <div className="header__inner">
-          <div className="header__logo" onClick={() => console.log("hi")}>
+          <div
+            className="header__logo"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
             <Logo />
           </div>
         </div>
