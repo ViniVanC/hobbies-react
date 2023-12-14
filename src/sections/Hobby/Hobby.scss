@@ -27,6 +27,7 @@ $element-count: 8;
   display: flex;
   align-items: center;
   overflow: hidden;
+  transition: all 0.3s ease-in-out;
 
   &.reverse {
     text-align: right;
@@ -34,6 +35,11 @@ $element-count: 8;
     .hobby__icon-box {
       left: 0;
     }
+  }
+
+  &.light-mode {
+    background-color: $light;
+    color: $dark;
   }
 
   &__inner {
