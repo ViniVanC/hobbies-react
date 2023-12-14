@@ -1,0 +1,8 @@
+.title {
+  font-size: 60px;
+  font-family: "eUkraineNAME", sans-serif;
+
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}

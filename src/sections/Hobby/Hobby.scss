@@ -1,0 +1,72 @@
+@import "../../vars";
+
+$container-width: 1000px;
+$container-height: 700px;
+$section-count: 5;
+$element-count: 8;
+
+@for $section from 1 through $section-count {
+  .hobbies {
+    > :nth-child(#{$section}) {
+      @for $i from 2 through $element-count {
+        .hobby__icon-box {
+          :nth-child(#{$i}) {
+            position: absolute;
+            top: random($container-height) + px;
+            left: random($container-width) + px;
+            opacity: random();
+          }
+        }
+      }
+    }
+  }
+}
+
+.hobby {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+
+  &.reverse {
+    text-align: right;
+
+    .hobby__icon-box {
+      left: 0;
+    }
+  }
+
+  &__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text-box {
+    text-align: center;
+    width: 50%;
+  }
+
+  &__icon-box {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    color: $purple;
+    z-index: $z1;
+
+    .big-icon {
+      font-size: 600px;
+      opacity: 0.2;
+    }
+    .icon {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 100px;
+      opacity: 0.2;
+    }
+  }
+}
