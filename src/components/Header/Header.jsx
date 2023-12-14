@@ -5,15 +5,18 @@ import { Logo } from "../Logo/Logo";
 import "./Header.scss";
 import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 import { useTheme } from "../../context/ThemeContext";
+import { MenuButton } from "../Menu/MenuButton";
+import { MenuSidebar } from "../Menu/MenuSidebar";
 
-export const Header = () => {
+export const Header = ({ menuOpen, handleMenuOpen }) => {
   const { darkMode } = useTheme();
 
   return (
     <header className={`header ${darkMode ? "" : "light-mode"}`}>
       <Container>
         <div className="header__inner">
-          <div className="burger__menu">m</div>
+          <MenuButton menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
+          <MenuSidebar menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
           <div
             className="header__logo"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

@@ -1,4 +1,11 @@
+@import-normalize;
 @import "vars";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
 :root {
   font-family: "eUkraine", sans-serif;
