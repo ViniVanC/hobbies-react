@@ -18,8 +18,10 @@ export const Intro = () => {
               </a>
             </div>
             <div className="intro__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
-              necessitatibus.
+              <p>Тут я розповім про свої захоплення</p>
+              <p className="help-text">
+                клікни по будь-якій іконці щоб дізнатись про мої хобі
+              </p>
             </div>
           </div>
           <div className="intro__pictures">
