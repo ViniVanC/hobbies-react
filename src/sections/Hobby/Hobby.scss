@@ -44,6 +44,8 @@ $element-count: 8;
   }
 
   &__text-box {
+    position: relative;
+    z-index: $z3;
     text-align: center;
     width: 50%;
   }
@@ -63,8 +65,6 @@ $element-count: 8;
     }
     .icon {
       position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
       font-size: 100px;
       opacity: 0.2;
     }
