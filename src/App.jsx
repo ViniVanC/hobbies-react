@@ -7,51 +7,68 @@ import { Hobby } from "./sections/Hobby/Hobby";
 import { FaUserNinja } from "react-icons/fa";
 import { PiCookingPotBold } from "react-icons/pi";
 import { FaGun, FaMusic, FaCode } from "react-icons/fa6";
+import { Element } from "react-scroll";
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
+
   const handleMenuOpen = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleSetActive = (to) => {
+    setActiveSection(to);
+  };
+
   return (
     <ThemeProvider>
-      <Header menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
+      <Header
+        menuOpen={menuOpen}
+        handleMenuOpen={handleMenuOpen}
+        activeSection={activeSection}
+        handleSetActive={handleSetActive}
+      />
       <main>
-        <Intro />
+        <Intro handleSetActive={handleSetActive} />
         <div className="hobbies">
-          <Hobby
-            id={"karate"}
-            title={"title"}
-            description={"description"}
-            icon={<FaUserNinja />}
-          />
-          <Hobby
-            id={"sooting"}
-            reverse={true}
-            title={"title"}
-            description={"description"}
-            icon={<FaGun />}
-          />
-          <Hobby
-            id={"dance"}
-            title={"title"}
-            description={"description"}
-            icon={<FaMusic />}
-          />
-          <Hobby
-            id={"cooking"}
-            reverse={true}
-            title={"title"}
-            description={"description"}
-            icon={<PiCookingPotBold />}
-          />
-          <Hobby
-            id={"coding"}
-            title={"title"}
-            description={"description"}
-            icon={<FaCode />}
-          />
+          <Element name={"karate"}>
+            <Hobby
+              title={"title"}
+              description={"description"}
+              icon={<FaUserNinja />}
+            />
+          </Element>
+          <Element name={"sooting"}>
+            <Hobby
+              reverse={true}
+              title={"title"}
+              description={"description"}
+              icon={<FaGun />}
+            />
+          </Element>
+          <Element name={"dance"}>
+            <Hobby
+              title={"title"}
+              description={"description"}
+              icon={<FaMusic />}
+            />
+          </Element>
+          <Element name={"cooking"}>
+            <Hobby
+              reverse={true}
+              title={"title"}
+              description={"description"}
+              icon={<PiCookingPotBold />}
+            />
+          </Element>
+          <Element name={"coding"}>
+            <Hobby
+              title={"title"}
+              description={"description"}
+              icon={<FaCode />}
+            />
+          </Element>
         </div>
       </main>
       <Footer />

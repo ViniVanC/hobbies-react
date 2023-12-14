@@ -13,22 +13,37 @@
       .picture {
         &:nth-child(1) {
           color: $purple-200;
+          a {
+            color: $purple-200;
+          }
         }
 
         &:nth-child(2) {
           color: $purple-200;
+          a {
+            color: $purple-200;
+          }
         }
 
         &:nth-child(3) {
           color: $purple;
+          a {
+            color: $purple;
+          }
         }
 
         &:nth-child(4) {
           color: lighten($color: $purple-200, $amount: 30);
+          a {
+            color: lighten($color: $purple-200, $amount: 30);
+          }
         }
 
         &:nth-child(5) {
           color: $dark;
+          a {
+            color: $dark;
+          }
         }
       }
     }
@@ -85,6 +100,9 @@
 
       &:nth-child(1) {
         color: $purple;
+        a {
+          color: $purple;
+        }
         font-size: 150px;
         top: 500px;
         left: 280px;
@@ -92,12 +110,18 @@
 
       &:nth-child(2) {
         color: $purple;
+        a {
+          color: $purple;
+        }
         top: 230px;
         left: 200px;
       }
 
       &:nth-child(3) {
         color: $purple-200;
+        a {
+          color: $purple-200;
+        }
         font-size: 220px;
         top: 400px;
         left: -80px;
@@ -105,12 +129,18 @@
 
       &:nth-child(4) {
         color: lighten($color: $purple-200, $amount: 30);
+        a {
+          color: lighten($color: $purple-200, $amount: 30);
+        }
         top: 320px;
         left: 380px;
       }
 
       &:nth-child(5) {
         color: $light;
+        a {
+          color: $light;
+        }
         font-size: 130px;
         top: 370px;
         left: 180px;

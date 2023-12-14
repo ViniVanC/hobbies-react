@@ -25,6 +25,16 @@
   background: $purple;
   transition: all 0.3s ease-in-out;
 
+  &.light-mode {
+    a {
+      color: $dark;
+
+      &.active {
+        color: $light;
+      }
+    }
+  }
+
   &.menu-open {
     transform: translateX(0);
   }
@@ -50,13 +60,26 @@
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 
+    a {
+      color: $light;
+      &.active {
+        transform: translateX(15px);
+        color: $dark;
+      }
+    }
+
     &:hover {
-      transform: translateX(15px);
+      a {
+        transform: translateX(15px);
+        color: $dark;
+      }
     }
 
     &:active {
-      transform: translateX(0);
-      scale: 0.9;
+      a {
+        transform: translateX(0);
+        scale: 0.9;
+      }
     }
   }
 }

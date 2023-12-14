@@ -8,7 +8,12 @@ import { useTheme } from "../../context/ThemeContext";
 import { MenuButton } from "../Menu/MenuButton";
 import { MenuSidebar } from "../Menu/MenuSidebar";
 
-export const Header = ({ menuOpen, handleMenuOpen }) => {
+export const Header = ({
+  menuOpen,
+  handleMenuOpen,
+  activeSection,
+  handleSetActive,
+}) => {
   const { darkMode } = useTheme();
 
   return (
@@ -16,7 +21,12 @@ export const Header = ({ menuOpen, handleMenuOpen }) => {
       <Container>
         <div className="header__inner">
           <MenuButton menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
-          <MenuSidebar menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
+          <MenuSidebar
+            menuOpen={menuOpen}
+            handleMenuOpen={handleMenuOpen}
+            activeSection={activeSection}
+            handleSetActive={handleSetActive}
+          />
           <div
             className="header__logo"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}

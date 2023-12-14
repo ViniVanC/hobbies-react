@@ -4,9 +4,10 @@ import { FaUserNinja } from "react-icons/fa";
 import { PiCookingPotBold } from "react-icons/pi";
 import { FaGun, FaMusic, FaCode, FaRegHand } from "react-icons/fa6";
 import { useTheme } from "../../context/ThemeContext";
+import { Link } from "react-scroll";
 import "./Intro.scss";
 
-export const Intro = () => {
+export const Intro = ({ handleSetActive }) => {
   const { darkMode } = useTheme();
 
   return (
@@ -29,19 +30,54 @@ export const Intro = () => {
           </div>
           <div className="intro__pictures">
             <div className="picture">
-              <FaUserNinja />
+              <Link
+                to="karate"
+                smooth={true}
+                spy={true}
+                onSetActive={() => handleSetActive("karate")}
+              >
+                <FaUserNinja />
+              </Link>
             </div>
             <div className="picture">
-              <FaGun />
+              <Link
+                to="sooting"
+                smooth={true}
+                spy={true}
+                onSetActive={() => handleSetActive("sooting")}
+              >
+                <FaGun />
+              </Link>
             </div>
             <div className="picture">
-              <FaMusic />
+              <Link
+                to="dance"
+                smooth={true}
+                spy={true}
+                onSetActive={() => handleSetActive("dance")}
+              >
+                <FaMusic />
+              </Link>
             </div>
             <div className="picture">
-              <PiCookingPotBold />
+              <Link
+                to="cooking"
+                smooth={true}
+                spy={true}
+                onSetActive={() => handleSetActive("cooking")}
+              >
+                <PiCookingPotBold />
+              </Link>
             </div>
             <div className="picture">
-              <FaCode />
+              <Link
+                to="coding"
+                smooth={true}
+                spy={true}
+                onSetActive={() => handleSetActive("coding")}
+              >
+                <FaCode />
+              </Link>
             </div>
           </div>
         </div>
