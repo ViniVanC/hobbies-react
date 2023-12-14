@@ -6,11 +6,18 @@
   z-index: $z6;
   background-color: $dark;
   box-shadow: 9px 15px 45px -18px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+
+  &.light-mode {
+    background-color: $light;
+    color: $dark;
+    box-shadow: 9px 15px 45px -18px rgba(0, 0, 0, 0.1);
+  }
 
   &__inner {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding: 10px 0;
   }
 

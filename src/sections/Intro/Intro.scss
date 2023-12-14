@@ -1,6 +1,39 @@
 @import "../../vars";
 
 .intro {
+  &.light-mode {
+    background-color: $light;
+    color: $purple;
+    transition: all 0.3s ease-in-out;
+
+    .intro__title {
+      color: $dark;
+    }
+    .intro__pictures {
+      .picture {
+        &:nth-child(1) {
+          color: $purple-200;
+        }
+
+        &:nth-child(2) {
+          color: $purple-200;
+        }
+
+        &:nth-child(3) {
+          color: $purple;
+        }
+
+        &:nth-child(4) {
+          color: lighten($color: $purple-200, $amount: 30);
+        }
+
+        &:nth-child(5) {
+          color: $dark;
+        }
+      }
+    }
+  }
+
   &__inner {
     height: 100vh;
     display: flex;

@@ -3,11 +3,14 @@ import { Container } from "../../components/Container/Container";
 import { FaUserNinja } from "react-icons/fa";
 import { PiCookingPotBold } from "react-icons/pi";
 import { FaGun, FaMusic, FaCode, FaRegHand } from "react-icons/fa6";
+import { useTheme } from "../../context/ThemeContext";
 import "./Intro.scss";
 
 export const Intro = () => {
+  const { darkMode } = useTheme();
+
   return (
-    <section className="intro">
+    <section className={`intro ${darkMode ? "" : "light-mode"}`}>
       <Container>
         <div className="intro__inner">
           <div className="intro__text-box">
