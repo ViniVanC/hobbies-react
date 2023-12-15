@@ -29,7 +29,7 @@ const data = [
   {
     id: 3,
     name: "dance",
-    title: "Танці",
+    title: "Полденс",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt dolore exercitationem ab! Soluta error culpa nesciunt doloribus eaque dolorum, quaerat, veniam necessitatibus temporibus quasi quisquam ratione ea, aliquam sequi.",
     icon: <FaMusic />,
