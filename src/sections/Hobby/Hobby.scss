@@ -54,6 +54,13 @@ $element-count: 8;
     z-index: $z3;
     text-align: center;
     width: 50%;
+
+    @media screen and (max-width: 768px) {
+      width: 70%;
+    }
+    @media screen and (max-width: 425px) {
+      width: 100%;
+    }
   }
 
   &__icon-box {
