@@ -79,6 +79,7 @@ function App() {
           {data.map(({ id, name, title, description, icon }) => (
             <Element key={id} name={name}>
               <Hobby
+                name={name}
                 title={title}
                 description={description}
                 icon={icon}
