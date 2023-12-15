@@ -17,6 +17,7 @@ const data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt dolore exercitationem ab! Soluta error culpa nesciunt doloribus eaque dolorum, quaerat, veniam necessitatibus temporibus quasi quisquam ratione ea, aliquam sequi.",
     icon: <FaUserNinja />,
+    imgLink: "",
   },
   {
     id: 2,
@@ -25,6 +26,7 @@ const data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt dolore exercitationem ab! Soluta error culpa nesciunt doloribus eaque dolorum, quaerat, veniam necessitatibus temporibus quasi quisquam ratione ea, aliquam sequi.",
     icon: <FaGun />,
+    imgLink: "https://pin.it/5M2PuZT",
   },
   {
     id: 3,
@@ -33,6 +35,7 @@ const data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt dolore exercitationem ab! Soluta error culpa nesciunt doloribus eaque dolorum, quaerat, veniam necessitatibus temporibus quasi quisquam ratione ea, aliquam sequi.",
     icon: <FaMusic />,
+    imgLink: "https://pin.it/4QIq3Wq",
   },
   {
     id: 4,
@@ -41,6 +44,7 @@ const data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt dolore exercitationem ab! Soluta error culpa nesciunt doloribus eaque dolorum, quaerat, veniam necessitatibus temporibus quasi quisquam ratione ea, aliquam sequi.",
     icon: <PiCookingPotBold />,
+    imgLink: "https://pin.it/1rFewSg",
   },
   {
     id: 5,
@@ -49,6 +53,7 @@ const data = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt dolore exercitationem ab! Soluta error culpa nesciunt doloribus eaque dolorum, quaerat, veniam necessitatibus temporibus quasi quisquam ratione ea, aliquam sequi.",
     icon: <FaCode />,
+    imgLink: "https://pin.it/1vjgH7U",
   },
 ];
 
@@ -76,7 +81,7 @@ function App() {
       <main>
         <Intro handleSetActive={handleSetActive} />
         <div className="hobbies">
-          {data.map(({ id, name, title, description, icon }) => (
+          {data.map(({ id, name, title, description, icon, imgLink }) => (
             <Element key={id} name={name}>
               <Hobby
                 name={name}
@@ -84,6 +89,7 @@ function App() {
                 description={description}
                 icon={icon}
                 reverse={id % 2 === 0 ? true : false}
+                imgLink={imgLink}
               />
             </Element>
           ))}

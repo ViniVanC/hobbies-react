@@ -6,7 +6,14 @@ import { useTheme } from "../../context/ThemeContext";
 import { motion } from "framer-motion";
 import "./Hobby.scss";
 
-export const Hobby = ({ name, title, description, icon, reverse = false }) => {
+export const Hobby = ({
+  name,
+  title,
+  description,
+  icon,
+  reverse = false,
+  imgLink,
+}) => {
   const { darkMode } = useTheme();
 
   return (
@@ -21,20 +28,25 @@ export const Hobby = ({ name, title, description, icon, reverse = false }) => {
             <Title>{title}</Title>
             <Description>{description}</Description>
           </div>
-          <div className="hobby__img-box">
-            <motion.img
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true, amount: 0.5 }}
-              transition={{ duration: 0.5, delay: 1.3 }}
-              variants={{
-                hidden: { opacity: 0 },
-                visible: { opacity: 1 },
-              }}
-              src={`/assets/images/${name}.jpg`}
-              alt={`${name} image`}
-            />
-          </div>
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5, delay: 1.3 }}
+            variants={{
+              hidden: { opacity: 0 },
+              visible: { opacity: 1 },
+            }}
+            className="hobby__img-box"
+          >
+            <img src={`/assets/images/${name}.jpg`} alt={`${name} image`} />
+            {imgLink && (
+              <a href={imgLink} target="_blank">
+                {" "}
+                Фото взято з пінтерест
+              </a>
+            )}
+          </motion.div>
           <div className="hobby__icon-box">
             <div className="big-icon">
               <motion.div

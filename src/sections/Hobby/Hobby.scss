@@ -96,6 +96,14 @@ $element-count: 8;
       height: 100%;
       object-fit: cover;
     }
+
+    a {
+      position: absolute;
+      bottom: 30px;
+      right: 30px;
+
+      color: $light;
+    }
   }
 
   &__icon-box {
