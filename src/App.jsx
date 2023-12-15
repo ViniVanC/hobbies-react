@@ -57,6 +57,7 @@ function App() {
 
   const handleSetActive = (to) => {
     setActiveSection(to);
+    setMenuOpen(false);
   };
 
   return (
