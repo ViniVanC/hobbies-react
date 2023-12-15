@@ -1,8 +1,8 @@
 import React from "react";
 import { FaMoon, FaSun } from "react-icons/fa6";
 import { motion } from "framer-motion";
-import "./ThemeToggle.scss";
 import { useTheme } from "../../context/ThemeContext";
+import "./ThemeToggle.scss";
 
 const variants = {
   rotate: {

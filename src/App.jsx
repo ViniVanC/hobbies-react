@@ -13,36 +13,41 @@ const data = [
   {
     id: 1,
     name: "karate",
-    title: "title",
-    description: "description",
+    title: "Карате",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt dolore exercitationem ab! Soluta error culpa nesciunt doloribus eaque dolorum, quaerat, veniam necessitatibus temporibus quasi quisquam ratione ea, aliquam sequi.",
     icon: <FaUserNinja />,
   },
   {
     id: 2,
     name: "sooting",
-    title: "title",
-    description: "description",
+    title: "Стрільба",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt dolore exercitationem ab! Soluta error culpa nesciunt doloribus eaque dolorum, quaerat, veniam necessitatibus temporibus quasi quisquam ratione ea, aliquam sequi.",
     icon: <FaGun />,
   },
   {
     id: 3,
     name: "dance",
-    title: "title",
-    description: "description",
+    title: "Танці",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt dolore exercitationem ab! Soluta error culpa nesciunt doloribus eaque dolorum, quaerat, veniam necessitatibus temporibus quasi quisquam ratione ea, aliquam sequi.",
     icon: <FaMusic />,
   },
   {
     id: 4,
     name: "cooking",
-    title: "title",
-    description: "description",
+    title: "Куховарство",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt dolore exercitationem ab! Soluta error culpa nesciunt doloribus eaque dolorum, quaerat, veniam necessitatibus temporibus quasi quisquam ratione ea, aliquam sequi.",
     icon: <PiCookingPotBold />,
   },
   {
     id: 5,
     name: "coding",
-    title: "title",
-    description: "description",
+    title: "Програмування",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui nesciunt dolore exercitationem ab! Soluta error culpa nesciunt doloribus eaque dolorum, quaerat, veniam necessitatibus temporibus quasi quisquam ratione ea, aliquam sequi.",
     icon: <FaCode />,
   },
 ];

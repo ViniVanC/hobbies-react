@@ -1,12 +1,11 @@
 import React from "react";
 import { Container } from "../Container/Container";
 import { Logo } from "../Logo/Logo";
-
-import "./Header.scss";
 import { ThemeToggle } from "../ThemeToggle/ThemeToggle";
 import { useTheme } from "../../context/ThemeContext";
 import { MenuButton } from "../Menu/MenuButton";
 import { MenuSidebar } from "../Menu/MenuSidebar";
+import "./Header.scss";
 
 export const Header = ({
   menuOpen,
