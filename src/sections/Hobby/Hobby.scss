@@ -68,6 +68,18 @@ $element-count: 8;
     .big-icon {
       font-size: 600px;
       opacity: 0.2;
+
+      @media screen and (max-width: 768px) {
+        font-size: 500px;
+      }
+
+      @media screen and (max-width: 425px) {
+        font-size: 400px;
+      }
+
+      @media screen and (max-width: 375px) {
+        font-size: 300px;
+      }
     }
     .icon {
       position: absolute;

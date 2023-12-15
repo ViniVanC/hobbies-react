@@ -19,9 +19,19 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 0;
+    @media screen and (max-width: 768px) {
+      padding: 5px;
+    }
   }
 
   &__logo {
     cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      svg {
+        width: 60px;
+        height: 60px;
+      }
+    }
   }
 }

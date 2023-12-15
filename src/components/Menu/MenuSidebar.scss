@@ -19,11 +19,16 @@
   top: 0;
   left: 0;
   transform: translateX(-200%);
+  z-index: $z6;
   width: 400px;
   height: 100vh;
   padding: 15px 15px 15px 30px;
   background: $purple;
   transition: all 0.3s ease-in-out;
+
+  @media screen and (max-width: 425px) {
+    width: 100%;
+  }
 
   &.light-mode {
     a {
