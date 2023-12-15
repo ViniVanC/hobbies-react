@@ -56,6 +56,7 @@ a {
 
 .hi-anim {
   animation: hi 1s ease-in-out 2;
+  animation-delay: 1s;
 
   @keyframes hi {
     0% {
