@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Markdown from "react-markdown";
 import "./Description.scss";
+import remarkGfm from "remark-gfm";
 
 export const Description = ({ children }) => {
   return (
@@ -10,12 +12,12 @@ export const Description = ({ children }) => {
       viewport={{ once: true, amount: 0.5 }}
       transition={{ duration: 0.5, delay: 1 }}
       variants={{
-        hidden: { opacity: 0, y: -100 },
-        visible: { opacity: 1, y: 0 },
+        hidden: { opacity: 0 },
+        visible: { opacity: 1 },
       }}
       className="description"
     >
-      {children}
+      <Markdown remarkPlugins={[remarkGfm]}>{children}</Markdown>
     </motion.p>
   );
 };
