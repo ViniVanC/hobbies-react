@@ -16,5 +16,9 @@
   ol,
   ul {
     padding-left: 35px;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 30px;
+    }
   }
 }
