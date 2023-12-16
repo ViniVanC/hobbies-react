@@ -7,6 +7,10 @@
   background-color: rgba($color: $dark, $alpha: 0.7);
   border-radius: 10px;
 
+  @media screen and (max-width: 425px) {
+    padding: 0;
+  }
+
   :nth-child(n) {
     &:not(:last-child) {
       margin-bottom: 20px;
